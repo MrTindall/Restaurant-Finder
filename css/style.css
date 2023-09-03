@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    --main-header-color: rgba(63, 130, 37, 0.7);
+    --main-nav-color: rgba(176, 233, 153, 0.5);
+    --main-border-color: rgba(63, 130, 37, 0.9);
+    --text-color: rgb(75, 18, 18);
+    
+
+}
+
+#fixed-top-section {
+    margin-top: -2px;
+    position: fixed;
+    width: 100%;
+}
+
+body {
+    border-top: 1px solid black;
+    background-image: url(/images/background_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text-color);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 60px;
+    background-color: var(--main-header-color);
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 146px auto;
+    height: 1500px;
+    
+}
+
+.form-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-nav-color);
+}
+
+#restaurantForm {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+label,
+input {
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+input[type=checkbox] {
+    -ms-transform: scale(1.8); /* IE */
+    -moz-transform: scale(1.8); /* FF */
+    -webkit-transform: scale(1.8); /* Safari and Chrome */
+    -o-transform: scale(1.8); /* Opera */
+    transform: scale(1.8);
+}
+
+label,
+input:hover {
+    cursor: pointer;
+}
+
+#restaurantResults {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+.restaurantCard {
+    max-width: 250px;
+    height: auto;
+    margin: 30px;
+    padding: 100px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.restaurantCard:hover {
+   background-color: rgba(243, 132, 53, 0.9);
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.output-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 100px;
+    
+}
+p {
+    padding: 10px 0;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #6b4343 #d1d1d1;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #d1d1d1;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #6b4343;
+    border-radius: 0px;
+    border: 0px solid #d1d1d1;
+  }
